@@ -16,6 +16,6 @@ Once the files are download, you have to tell stanza were this files are. I work
 
 Notice how I __Add an *__ at the end, this is necessary to work.
 
-## Moving On
+## Transforming PDF Files to Txt Files
 
-Once you do the previous steps you´ll be ready to run the steps mentioned on the original repo.
+The model uses Text files so the first step is building this txt files. You need to run the file __Pdf2Text__ inside the data folder. In this folder you need to store all the pdf files that you want to use, particulary in the folder which says __pdf_files__.
