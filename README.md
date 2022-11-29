@@ -16,15 +16,25 @@ Once the files are download, you have to tell stanza were this files are. I work
 
 Notice how I __Add an *__ at the end, this is necessary to work.
 
-## Transforming PDF Files to Txt Files
+## Step 1 : Transforming PDF Files to Txt Files
 
 The model uses Text files so the first step is building this txt files. You need to run the file __Pdf2Text__ inside the data folder. In this folder you need to store all the pdf files that you want to use, particulary in the folder which says __pdf_files__. After selecting all the files, open your terminal and run __python pdf2text.py__. This will transform all of the pdf files on the pdf folder into __txt format__. It will generate two files into the __input folder : documents and document_ids__ both of them are used in the next step.
 
-## Parsing the text
+## Step 2 : Parsing the text
 
 The next step is __Parsing__ . Running the command __python parse.py__ will parse de text, which means, it will analyze each word and it´s meaning (Part of Speech) in the sentence. This is necessary for the final test. This step will create a __Parsed Text__ located in the __data/processed/parsed__ folder.
 
-## Unigrams , Bigrams, Trigrams and Scoring
+## Step 3 : Unigrams , Bigrams, Trigrams and Scoring the Documents
+
+The final step is running __python inference.py__ . This script will take the __Trigrams__ and score each document. For a detailed explanation on how this scoring system works, you can check the __Debugging Score Notebook__ . This script will output 3 types of scores : __TF , TFIDF and WFIDF__ according to the paper. 
+
+## OBSERVATIONS
+
+The precedding code was built for __INFERENCE__ purposes only. It was pretrained using the original 1963 documents from the original repo. If you want to retrain a model, follow the steps below
+
+## Training From Scratch
+
+
 
 
 
