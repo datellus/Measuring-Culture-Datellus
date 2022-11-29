@@ -34,7 +34,7 @@ The precedding code was built for __INFERENCE__ purposes only. It was pretrained
 
 ## Training From Scratch
 
-
+Follow __Steps 1 and 2__. Then follow step 2 from the original repo, where it explains how to clean and train models and score the functions. 
 
 
 
