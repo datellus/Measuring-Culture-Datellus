@@ -18,4 +18,13 @@ Notice how I __Add an *__ at the end, this is necessary to work.
 
 ## Transforming PDF Files to Txt Files
 
-The model uses Text files so the first step is building this txt files. You need to run the file __Pdf2Text__ inside the data folder. In this folder you need to store all the pdf files that you want to use, particulary in the folder which says __pdf_files__.
+The model uses Text files so the first step is building this txt files. You need to run the file __Pdf2Text__ inside the data folder. In this folder you need to store all the pdf files that you want to use, particulary in the folder which says __pdf_files__. After selecting all the files, open your terminal and run __python pdf2text.py__. This will transform all of the pdf files on the pdf folder into __txt format__. It will generate two files into the __input folder : documents and document_ids__ both of them are used in the next step.
+
+## Parsing the text
+
+The next step is __Parsing__ . Running the command __python parse.py__ will parse de text, which means, it will analyze each word and it´s meaning (Part of Speech) in the sentence. This is necessary for the final test. This step will create a __Parsed Text__ located in the __data/processed/parsed__ folder.
+
+## Unigrams , Bigrams, Trigrams and Scoring
+
+
+
